@@ -4,11 +4,9 @@
 
 1. **Sentence-case** all title/header/list text.
 3. When linking to things, avoid anchoring links to words like “here” or “this”. Use a descriptive anchor instead.
-4. Don't modify quicklooks: e.g., <a data-quicklook-from="arbitrum-one">Arbitrum One</a>https://arbitrum.io/.
+4. Don't modify quicklooks: e.g., [<a data-quicklook-from="arbitrum-one">Arbitrum One</a>](https://arbitrum.io/).
 5. Spell out words like “and” or “or” in published docs.
-    
-## **terminology guide**
-        
+6. If you identify these terms in the [ORIGINAL-CONTENT], make sure to replace them with the OK version:
 
 | Term                                                                                      | OK                                                                                           | Not OK                                  |
 |-------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|-----------------------------------------|
