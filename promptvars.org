@@ -1,0 +1,21 @@
+* Variables to use with prompts in the context of docs.arbitrum.io
+
+*[FUNCTION]* = Function explained in the code  | Example: createRollupPrepareConfig
+*[OUTPUT-TYPE]* = What type of content is expect as output from the prompt | Examples: how-to | tutorial | Overview | README
+*[OUTPUT-LENGTH]* = The length of the output in number of words. | Examples: 500
+*[SOURCE-1]* = URL where reference content can be found to gather context or additional information about the content subject | Example: https://docs.arbitrum.io/launch-orbit-chain/how-tos/orbit-sdk-deploying-rollup-chain
+*[SOURCE-2]* = Another source, Similar [SOURCE-1]
+*[SOURCE-2]* = Another source, Similar [SOURCE-1]
+*[SOURCE-TRUTH]* = URL where reference content can be found to verify output content against real data  | Example: https://github.com/OffchainLabs/arbitrum-orbit-sdk/tree/main/src
+*[PERSONA]* = Description of the role/mode the LLM model should use to generate the output  | Example: You are a technical writer with specialized expertise in blockchain development documentation. You work for Arbitrum, an L2 project.
+*[CONSTRAINT]* Defines some rules to apply for the LLM | Example: Stick as closely as possible to the {Source Material} for your information. If the information doesn't exist in the {Source Material}, don't invent information. Instead, write "No information available in source material" for that part of the template.
+*[DONTS]* = What the LLMs shouldn't do | Example: "Don't make up functions if they don't exist in the [SOURCE-TRUTH]"
+*[AUDIENCE]* = Define the type of audience targeted by the output. | Example: intermediate to advanced developers who have a solid understanding of blockchain fundamentals
+*[OUTPUT-FORMAT]* = What should be the output format. | Examples: MD | GFM | Latex | Orgmode
+*[PROSE]* = What should be the output style. | Examples: Employ a clear, informative narrative style that demystifies complex deployment processes without sacrificing technical rigor. Maintain an engaging voice in the present tense throughout. Avoid unnecessarily praising Arbitrum technology or using marketing voice. Please avoid using an academic style or pedantic English.
+*[ARTICLE]* = The output of the prompt
+*[TOPIC]* = The topic covered by the [ARTICLE] | Example: how to deploy an Orbit chain with the Orbit SDK
+*[CONTEXT-WHAT]* = Contextual information that isn't accessible to the LLM about what these methods or modules enable in the larger context of the codebase | Example: The `DataAvailabilityCommittee` paramerer will determine if the deployed Orbit chain follows the AnyTrust
+*[CONTEXT-FLOW]* = Contextual information that isn't accessible to the LLM about where the how to fits in a more general workflow.
+*[PRIORITY]* = What information should be explained the most.
+*[GLOSSARY]* = Terminology list with definitions to provide context and use the right terms in the [ARTICLE] | Example: 'https://raw.githubusercontent.com/OffchainLabs/arbitrum-docs/master/website/static/glossary.json'
