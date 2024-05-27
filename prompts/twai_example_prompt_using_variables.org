@@ -1,0 +1,48 @@
+VARS:
+
+Replace the following shortcodes according to your needs:
+
+* = Required
+
+*[STORY-THEME]* = Theme or central idea of the story | Example: Love for nature
+*[MAIN-CHARACTER]* = Name and brief description of the main character | Example: Theo, a young apprentice knight
+*[SETTING]* = Place and time where the story takes place | Example: An enchanted forest in the Middle Ages
+*[SECONDARY-CHARACTER]* = Secondary character(s) and brief description | Example: Lila, a water fairy
+*[PLOT]* = Main subject of the story and some elements on how it unfolds | Example: A strange shadow looms over the forest, leaving those who saw it blind and with the ability to see through people's minds.
+*[TONE]* = Tone of the story (happy, sad, adventurous, etc.) | Example: Adventurous
+*[STORY-LANGUAGE]* = Language in which you want your story to be written | Example: French
+*[STORY-LENGTH]* = Number of words you want in the story | Example: "300"
+*[COMPLEXITY-LEVEL]* = Flesch readability score for story complexity | Example: 80 (Easy to understand) / 10 (Hard to understand)
+*[ENDING]* = How the story ends.
+
+--------
+START OF PROMPT:
+
+>>>>> Write a very short social fiction for adults
+
+[STORY-THEME] = The fall of a hedge fund
+[MAIN-CHARACTER] = Ahmed, an angry young Palestinian
+[SETTING] = The offices of a major wall street hedge fund
+[SECONDARY-CHARACTER] = Bethany, a young PHD in psychology who joined the hedge fund to reimburse her student debt.
+[PLOT] = The members of a popular online anarchist forum have decided to rally and pump up the share prices of american produced potatoes, delighting independent farmers and scaring traders who shorted the asset.
+[TONE] = Dark Comedy
+[STORY-LANGUAGE] = American English
+[STORY-LENGTH] = "300"
+[COMPLEXITY-LEVEL] = 20 (quite hard to understand)
+[SETTING] = The elevator of a manhattan high-rise
+[ENDING] = The us potato farmers use their over-valued shares to pay off their debt and buy-back all the real-estate bought by agro-corporations
+
+Write a short fiction about "[STORY-THEME] with [MAIN-CHARACTER]" considering the following elements:
+
+Language: [STORY-LANGUAGE]
+Tone of the story: [TONE]
+Setting of the story: [SETTING]
+Main character: [MAIN-CHARACTER]
+Central problem: [PLOT]
+The story should be at least [STORY-LENGTH] words long.
+The story should start with a intriguing hook conected to a very recent event, to awaken the reader's curiosity.
+Use complex concepts with a simple vocabulary, use kinky analogies.
+Ensure the story has a clear beginning, middle (with the main problem), and end (resolution).
+Use varied sentence structures, include bogus press titles as quotes to keep the narrative engaging.
+Ensure the story adheres to the "Flesch readability score" = [COMPLEXITY-LEVEL].
+IMPORTANT: The story must be original, surprising and shocking to readers of any political sentiment.

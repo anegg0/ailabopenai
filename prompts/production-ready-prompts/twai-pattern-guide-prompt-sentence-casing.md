@@ -1,31 +1,33 @@
+### 
 VARS:
 
-* = Required
+*[ORIGINAL-CONTENT]* = The content to modify, 
 
-*[ARTICLE]* = The content and steps of the guide.
-*[PATTERN-GUIDE]* = A formal document defining what the tone, voice, replacements, acronyms should be used by the language model.
-*[PERSONA]* = Description of the role/mode the LLM model should use to generate the output  | Example: You are a technical writer with specialized expertise in blockchain development documentation. You work for Arbitrum, an L2 project.
-*[CONSTRAINTS]* Defines some rules to apply for the LLM | Example: Stick as closely as possible to the [TRUTH-SOURCE] for your information. If the information doesn't exist in the [TRUTH-SOURCE], don't invent information. Instead, write "No information available in source material" for that part of the template.
-*[DONTS]* = What the LLMs shouldn't do | Example: "Don't make up functions if they don't exist in the [TRUTH-SOURCE]"
-*[AUDIENCE]* = Define the type of audience targeted by the output. | Example: intermediate to advanced developers who have a solid understanding of blockchain fundamentals
-*[OUTPUT-FORMAT]* = What should be the output format. | Examples: MD | GFM | Latex | Orgmode
-*[ORIGINAL-CONTENT]* = The content to modifiy 
-*[GLOSSARY]* = Terminology list with definitions to provide context and use the right terms in the [ARTICLE] | Example: 'https://raw.githubusercontent.com/OffchainLabs/arbitrum-docs/master/website/static/glossary.json'
-
---------
 START OF PROMPT:
 
->>>>> Proofread the [ORIGINAL-CONTENT] using the [PATTERN-GUIDE].
+Ensure all headers and bullet-points in [ORIGINAL-CONTENT] are in sentence-case capitalization.
 
-*[PATTERN-GUIDE] = https://github.com/anegg0/ailabopenai/blob/main/Pattern_guide_OCL_BoLD.md
-[PERSONA] = You are a technical writer with specialized expertise in blockchain development documentation. You work for Arbitrum, an L2 project.
-[CONSTRAINTS] = Stick as closely as possible to the [PATTERN-GUIDE].
-*[DONTS] = Don't make up information. Don't praise Arbitrum technology. Don't use marketing voice. Don't change the content's style or voice. DON'T modify quicklooks:[<a data-quicklook-from="arbitrum-one">Arbitrum One</a>](https://arbitrum.io/).
-[AUDIENCE] = Intermediate to advanced developers and academics who have a solid understanding of blockchain fundamentals and want to build a project on top of Arbitrum.
-[OUTPUT-FORMAT] = GFM.
-[GLOSSARY] = https://raw.githubusercontent.com/OffchainLabs/arbitrum-docs/master/website/static/glossary.json
-[ORIGINAL-CONTENT] = "_The following document explains the economics and denial-of-service mechanisms built into Arbitrum BoLD. It covers trade-offs Arbitrum has to make to enable permissionless validation, explaining the key problems in an accessible way._
+**Examples of acceptable changes:**
 
+- **OK:** "### Withdrawing assets back to Ethereum from Arbitrum"
+  
+  **NOT OK:** "### Withdrawing Assets Back to Ethereum from Arbitrum"
+
+- **OK:** "## Resolving disputes"
+
+  **NOT OK:** "## Resolving Disputes"
+
+- **OK:** "### Spamming the dispute game"
+
+  **NOT OK:** "### Spamming the Dispute Game"
+
+- **OK:** "- **Boarding for a doowoodoowoobap kind of ride**"
+
+- **NOT OK:** "- **Boarding For a Doowoodoowoobap Kind of Ride**"
+
+**Do not make any other changes to the content!**
+
+[ORIGINAL-CONTENT]* = 
 ## Background
 
 [<a data-quicklook-from="arbitrum-one">Arbitrum One</a>](https://arbitrum.io/) is currently one of the most widely adopted Ethereum scaling solutions, with [~$18bn USD in total-value-locked](https://l2beat.com/scaling/projects/arbitrum) at the time of writing. Not only do its scaling properties, such as its 250ms block times, make it popular, but so do its security properties and approach to decentralization. Currently, Arbitrum One is governed by the Arbitrum DAO, one of the most active and robust onchain organizations.
@@ -155,6 +157,11 @@ A more complex model is proposed, which considers all parties staking and their 
 
 ## Conclusion
 
-This paper summarizes the rationale behind choosing bond sizes and the cost of spam prevention in Optimistic Rollup dispute protocols. We recommend that bond sizes be high enough to discourage challenges from being opened, as evil parties will always stand to lose when playing the game. As Arbitrum BOLD does not tie disputes to specific addresses, honest parties can have trustless cooperation to resolve disputes if desired. We posit that making the cost of the evil parties be 10x that of the honest party leads to nice economic properties that help us reason about how to price bonds. Finally, we look at a high-level game theory discussion of Optimistic Rollups and argue that solving the verifier's dilemma by incentives to honest validators is an important addition to work towards."
+This paper summarizes the rationale behind choosing bond sizes and the cost of spam prevention in Optimistic Rollup dispute protocols. We recommend that bond sizes be high enough to discourage challenges from being opened, as evil parties will always stand to lose when playing the game. As Arbitrum BOLD does not tie disputes to specific addresses, honest parties can have trustless cooperation to resolve disputes if desired. We posit that making the cost of the evil parties be 10x that of the honest party leads to nice economic properties that help us reason about how to price bonds. Finally, we look at a high-level game theory discussion of Optimistic Rollups and argue that solving the verifier's dilemma by incentives to honest validators is an important addition to work towards.
 
---------
+
+<!-- Local Variables: -->
+<!-- gptel-model: "gpt-4o" -->
+<!-- gptel--backend-name: "ChatGPT" -->
+<!-- gptel--bounds: ((6 . 97) (137 . 175) (646 . 647) (698 . 720)) -->
+<!-- End: -->

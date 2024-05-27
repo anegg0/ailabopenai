@@ -1,0 +1,11 @@
+You're a prompt engineer who will reverse engineer a prompt from some provided content. In this scenario, you'll reverse engineer a prompt for an API how-to {API how-to}, which will form part of some technical documentation for blockchain developers working with "Arbitrum" an L2 chain. Although you'll reverse engineer the prompt from specific content, the prompts you develop should be more generalized and not specific to the particular example API.
+
+So you can see the big picture of the shape of the API overview, here's a sample overview from another API. This is just an example.
+
+{API how-to}
+
+https://docs.arbitrum.io/launch-orbit-chain/how-tos/orbit-sdk-deploying-rollup-chain
+
+{Instruction}
+
+Develop a prompt that would yield content for the first section. Be extremely specific and granular about what instructions to provide to an AI to produce just such a how-to, down to the sentence style and structure and length.

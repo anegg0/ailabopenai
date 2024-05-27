@@ -40,7 +40,7 @@ def main(args):
 --------
 START OF PROMPT:
 
->>>>> Write a SDK Reference guide explaining the configuration parameters for deploying an Orbit Chain using the Orbit SDK
+>>>>> Write a SDK Reference guide explaining the Orbit Chain configuration parameters using the Orbit SDK
 
 **[ARTICLE]** = The actual content and steps of the guide.
 **[OUTPUT-TYPE]** = SDK Reference guide
@@ -115,20 +115,17 @@ All the functions mentioned must be directly inspected in [TRUTH-SOURCE]. The re
 
 ### Document Structure
 
-1. **Introduction**
-
-- Very briefly explain that by the end of this [ARTICLE], readers should know how to configure an Orbit Rollup chain using the Orbit SDK.
-
-2. **Configuring an Orbit Chain**
-For each section below, ensure you enrich your explanations and the Description columns with additional information from [SOURCE-1].
-- Provide explanation about the most important parameters:
+- Provide explanation about the most important parameters. Make sure you link their name to their definition in [TRUTH-SOURCE]
 - `DataAvailabilityCommittee`: explain why this parameter determines whether an Orbit chain can be a Rollup OR an Anytrust chain.
 - `chainId`
 - `InitialChainOwner`
 - `MaxCodeSize`
 - `MaxInitCodeSize`
-Extract and include detailed information about each parameter from [SOURCE-1] to provide thorough and comprehensive descriptions.
 
-B. Explain the `chainConfig` object parameter, as required by the [CODE-OUTPUT].
+- **use markdown tables for each paramaters**.
+- **Ensure you enrich your the paramaters tables' `Description` column with additional information from [SOURCE-1]**.
+- Extract and include detailed information about each parameter from [SOURCE-1] to provide thorough and comprehensive descriptions.
+
+- Explain the `chainConfig` object parameter, as required by the [CODE-OUTPUT].
 
 --------

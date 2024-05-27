@@ -1,7 +1,5 @@
 The most common structure of a prompt is:
 
-y
-
 1. Persona
 
 You're a technical writer creating API documentation for blockchain developers working with "Arbitrum" an L2 chain. As a technical writer, you write with both clarity and accuracy, following documentation style standards common in technical style guides. You've gathered source material {Source Material} in the form of engineering docs and source code.
